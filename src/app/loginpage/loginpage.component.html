@@ -1,0 +1,34 @@
+<div class="box-form">
+  <div class="left">
+    <div class="overlay">
+      <h1>Sales Succes.</h1>
+      <p>
+        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur et
+        est sed felis aliquet sollicitudin
+      </p>
+      <span>
+        <a href="#">Continue With SSO</a>
+      </span>
+    </div>
+  </div>
+  <div class="right">
+    <h1>Login</h1>
+    <form action="" [formGroup]="loginForm">
+      <div class="inputs">
+        <input type="text" placeholder="user name" formControlName="userName" />
+        <br />
+        <input
+          type="password"
+          placeholder="password"
+          formControlName="password"
+        />
+      </div>
+    </form>
+    <br /><br />
+
+    <div class="btn">
+      <button (click)="submit()" class="btnStyle">Login</button>
+      <button (click)="onsubmit()" class="btnStyle">Sign-Up</button>
+    </div>
+  </div>
+</div>

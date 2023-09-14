@@ -1,0 +1,68 @@
+<div class="contariner-fluid">
+  <div class="row">
+    <div class="col-lg-1">
+      <app-side-bar></app-side-bar>
+    </div>
+    <div class="col-xl-11" style="margin-top: 5px">
+      <app-header></app-header>
+      <div class="addquestion">
+        <!-- <h3>Add Question Clicking Below Button </h3> -->
+      </div>
+      <hr class="hrtag" size="4" width="730px">
+      <div class="addQuestionBtn">
+        <button
+          style="
+            background-color: red;
+            border-radius: 10px;
+            padding: 5px;
+            border: none;
+          "
+          routerLink="/admin-user-form"
+        >
+          Add Question
+        </button>
+      </div>
+      <div class="addQuestionBtn">
+        <button
+          style="
+            background-color: red;
+            border-radius: 10px;
+            padding: 5px;
+            border: none;
+          "
+          routerLink="/dashboard"
+        >
+          Sales Dashboard
+        </button>
+      </div>
+      <div class="examheading">
+        <h3> Exam Result For Users</h3>
+      </div>
+      <hr class="hrtag" size="4" width="730px">
+      <table class="table-bordered tableStyle">
+        <thead>
+          <tr>
+            <th>Name</th>
+            <th scope="col">Marks</th>
+            <th>Time Taken</th>
+            <th>Submited On</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr *ngFor="let answer of userDetails">
+            <th scope="row">
+              <a
+                routerLink="/answer-tab"
+                [queryParams]="{ userID: answer.user._id }"
+                >{{ answer?.user?.fullName }}</a
+              >
+            </th>
+            <td>{{ answer?.mark }}</td>
+            <td>{{ timeTaken }}</td>
+            <td>{{ answer.endTime | date : "dd MMM-YYYY" }}</td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+  </div>
+</div>

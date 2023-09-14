@@ -1,0 +1,33 @@
+<div class="contariner-fluid">
+  <div class="row">
+    <div class="col-xl-11" style="margin-top: 5px">
+      <app-header></app-header>
+      <div>
+        <button class="backBtn">Back</button>
+        <button class="exportBtn" (click)="exportAsExcelFile()">
+          Export To Excel
+        </button>
+      </div>
+      <table class="table table table-bordered">
+        <thead class="tableHead">
+          <tr>
+            <th scope="col">Name</th>
+            <th scope="col">Category</th>
+            <th scope="col">Question</th>
+            <th scope="col">Answer</th>
+            <th scope="col">Marks</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr *ngFor="let answer of ansArray">
+            <th scope="row">{{ answer?.user?.fullName }}</th>
+            <td>{{ answer?.category }}</td>
+            <td>{{ answer?.question }}</td>
+            <td>{{ answer?.option }}</td>
+            <td>{{ answer?.mark }}</td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+  </div>
+</div>

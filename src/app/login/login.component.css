@@ -1,0 +1,64 @@
+.navbar{
+    margin-top:10px;
+    border-radius: 10px;
+    margin-left: 15px;
+    margin-right: 15px;
+  }
+  #pricing_module{
+     width:400px;
+
+  }
+
+  #Please_Enter_Your_Login_Credential{
+
+    font-size: 20px;
+  }
+  @import url('https://fonts.googleapis.com/css2?family=Noto+Sans:wght@700&family=Poppins:wght@400;500;600&display=swap');
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+}
+form{
+  padding: 10px 30px;
+  box-sizing: border-box;
+}
+
+.pass:hover{
+  text-decoration: underline;
+}
+
+  .size1{
+    color: #dc3545;
+    font-size: 20px;
+
+  }
+
+  .size2{
+    color: #dc3545;
+    font-size: 60px;
+
+  }
+  .size3,.size4{
+    color: #dc3545;
+    font-size: 25px;
+
+  }
+ .vh-100{
+  margin-top: 100px;
+ } 
+ .bg-danger{
+  margin-top: 70px;
+ }
+ .col-xl-5{
+  margin-top: -100px;
+ }
+ select{
+  width: 395px;
+  height: 45px;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+ }

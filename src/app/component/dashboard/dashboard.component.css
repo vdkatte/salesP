@@ -1,0 +1,63 @@
+*{
+    margin: 0;
+    padding: 0;
+  }
+  .col-lg-1{
+   width: 5% !important;
+  }
+  .col-xl-11{
+  width: 95% !important;
+  }
+  .background-color{
+    background-color: #1e1836;
+    height: 300px;
+  } 
+    .progressBar{
+       margin-top: 20px;
+       margin-left: 70px;
+    }
+    .groupCard{
+        display: flex;
+        justify-content: center;
+        margin-top: 40px;
+    }
+    .groupCard1{
+      justify-content: center;
+      margin-top: -100px;
+      justify-content: center;
+  }
+    
+    .cards{
+        margin-left: 80px;
+    }
+    .cardBody{
+        text-align: center;
+       padding: 10px;
+        font-weight: bold;
+        background-color: rgb(212, 209, 216);
+        
+      
+    }
+   .cardBody a {
+      text-decoration: none;
+    }
+    .saveBtn{
+      margin-top: 20px;
+      margin-left: 10vw; 
+     }
+     .saveBtnStyle{
+      width: 120px;
+      background-color: red;
+      border: 2px solid rgb(130, 200, 233);
+      border-radius: 15px;
+      padding: 5px;
+      margin-right: 10px;
+      border: none;
+     }
+     .checkMark{
+          width: 20px;
+      height: 10px;
+     }
+     .directselltext{
+      text-align: center;
+  }

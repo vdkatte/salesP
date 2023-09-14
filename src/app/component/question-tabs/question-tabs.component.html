@@ -1,0 +1,48 @@
+<div class="contariner-fluid">
+  <div class="row">
+    <div class="col-lg-1">
+      <app-side-bar></app-side-bar>
+    </div>
+    <div class="col-xl-11" style="margin-top: 5px">
+      <app-header></app-header>
+
+      <mat-tab-group
+        class="data"
+        mat-stretch-tabs="false"
+        mat-align-tabs="start"
+        (selectedTabChange)="selectedTab($event)"
+        [selectedIndex]="selectedIndex"
+      >
+        <ng-container *ngFor="let tab of tabArray">
+          <mat-tab [label]="tab">
+            <ng-container
+              *ngFor="let question of questionArray; let i = index"
+              style="height: 200px"
+            >
+              <div
+                style="margin-top: 20px; margin-left: 20px; font-weight: bold"
+              >
+                Que {{ i + 1 }}. {{ question.question }}
+              </div>
+              <ng-container *ngFor="let opt of question.option">
+                <div style="margin-top: 5px; margin-left: 50px">
+                  <input
+                    type="radio"
+                    style="margin-right: 10px"
+                    name="option"
+                    (click)="onClick(opt, question)"
+                    name="option-{{ i }}"
+                  />{{ opt.option }}
+                </div>
+              </ng-container>
+              <hr />
+            </ng-container>
+            <div class="btn">
+              <button class="btn-design1" (click)="onSave()">Save</button>
+            </div>
+          </mat-tab>
+        </ng-container>
+      </mat-tab-group>
+    </div>
+  </div>
+</div>

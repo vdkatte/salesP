@@ -1,0 +1,82 @@
+<body
+  style="background: url(./Images/img_back1.jpg) no-repeat; background-size: cover; background-color: rgb(238, 218, 199);">
+
+
+  <nav class="navbar navbar-expand-lg navbar-light bg-light">
+    <div class="container-fluid">
+      <img src="./Images/techmlogo.png" height="50px" width="150px" alt="">
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
+        aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+
+    </div>
+  </nav>
+  <section class="vh-100">
+    <div class="container-fluid h-custom">
+      <div class="row d-flex justify-content-center align-items-center h-100">
+        <div class="col-md-9 col-lg-6 col-xl-5">
+
+          <h3 class="size1"><b>Welcome to the</b></h3>
+          <br>
+          <h1 class="size2"><b>Selling For</b></h1>
+          <br>
+          <h2 class="size3"><b>Success In Direct</b></h2>
+          <br>
+          <h2 class="size4"><b>Login Page</b></h2>
+
+        </div>
+        <div class="col-md-8 col-lg-6 col-xl-4 offset-xl-1">
+          <form name="myForm" (ngSubmit)="onSubmit()">
+            <!-- Email input -->
+            <div class="form-outline mb-4">
+              <label class="form-label" for="form3Example3">Lan ID</label>
+              <br>
+              <input type="email" id="form3Example3" class="form-control form-control-lg"
+                placeholder="Please Enter The LAN ID" required name="lanId" />
+              <!-- <div *ngIf="myForm.controls.lanId.invalid && myForm.controls.form3Example3.touched">Please Enter Land Id</div> -->
+            </div>
+
+            <!-- Password input -->
+            <div class="form-outline mb-3">
+              <label class="form-label" for="form3Example4">Password</label>
+              <input type="password" id="form3Example4" class="form-control form-control-lg"
+                placeholder="Please Enter the password" required name="password" />
+              <!-- <div *ngIf="myForm.controls.password.invalid && myForm.controls.form3Example4.touched">Please Enter Password</div> -->
+
+            </div>
+            <div class="d-flex justify-content-between align-items-center">
+              <!-- Checkbox -->
+              <div class="form-check mb-0">
+                <input class="form-check-input me-2" type="checkbox" value="" id="form2Example3" />
+                <label class="form-check-label" for="form2Example3">
+                  Remember me
+                </label>
+              </div>
+              <a href="#!" class="text-body">Forgot password?</a>
+            </div>
+
+            <div class="text-center text-lg-start mt-4 pt-2">
+              <button type="button" class="btn btn-danger btn-lg" style="padding-left: 2rem; padding-right: 2rem;"
+                (click)="onSubmit(); navigateToDashboard()" [routerLink]="'/dashboard'">Guest User</button>
+              &nbsp; &nbsp;<button type="button" class="btn btn-danger btn-lg" style="padding-left: 2rem; padding-right: 2rem;" routerLink="/addquestion">Admin User</button>
+            </div>
+            <div class="text-center text-lg-start mt-4 pt-2">
+              <button type="button" class="btn btn-danger btn-lg" style="padding-left: 2.5rem; padding-right: 2.5rem;"
+                routerLink="/livechat">Click Here For Live Support Chat</button>
+            </div>
+          </form>
+        </div>
+      </div>
+    </div>
+    <div
+      class="d-flex flex-column flex-md-row text-center text-md-start justify-content-between py-4 px-4 px-xl-5 bg-danger">
+      <!-- Copyright -->
+      <div class="text-white mb-3 mb-md-0">
+        Copyright © 2023. TechMahindra.
+      </div>
+      <!-- Copyright -->
+
+
+    </div>
+  </section>

@@ -1,0 +1,43 @@
+<div class="contariner-fluid">
+  <div class="row">
+    <div class="col-lg-1">
+      <app-side-bar></app-side-bar>
+    </div>
+    <div class="col-xl-11" style="margin-top: 5px">
+      <app-header></app-header>
+      <div class="container-fluid Open-nav">
+        <div class="row">
+          <div class="col">
+            <button
+              class="btn-style"
+              routerLink="/tab"
+              [queryParams]="{ component: 'Requirement' }"
+            >
+              Requirement
+            </button>
+          </div>
+          <div class="col">
+            <button
+              class="btn-style"
+              routerLink="/tab"
+              [queryParams]="{ component: 'Gap Analysis' }"
+            >
+              Gap Analysis
+            </button>
+          </div>
+          <div class="col">
+            <button
+              class="btn-style"
+              routerLink="/tab"
+              [queryParams]="{ component: 'Significance' }"
+            >
+              Significance
+            </button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+////

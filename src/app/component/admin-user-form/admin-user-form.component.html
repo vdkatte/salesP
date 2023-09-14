@@ -1,0 +1,130 @@
+<form [formGroup]="adminForm" class="formStyle">
+  <div>
+    <label style="font-size: 20px">Please Select Stage or Category:</label>
+    <select
+      formControlName="category"
+      style="padding: 10px; width: 30%; margin-left: 10px"
+    >
+      <option value="">Please Select Stage or Category</option>
+      <option value="Introduction">Introduction</option>
+      <option value="Engage With Concept">Engage With Concept</option>
+      <option value="Buisness">Buisness</option>
+      <option value="Personal">Personal</option>
+      <option value="Agree To Consider">Agree To Consider</option>
+      <option value="Framework">Framework</option>
+      <option value="Specifics">Specifics</option>
+      <option value="Importance">Importance</option>
+      <option value="Ideal v current">Ideal v current</option>
+      <option value="Clarity">Clarity</option>
+      <option value="Loss & Gains">Loss & Gains</option>
+      <option value="Reconnect to driver">Reconnect to driver</option>
+      <option value="Overview">Overview</option>
+      <option value="Critical issue">Critical issue</option>
+      <option value="Common standards">Common standards</option>
+      <option value="Why You">Why You</option>
+      <option value="Evidence">Evidence</option>
+      <option value="Impact">Impact</option>
+      <option value="Example">Example</option>
+      <option value="Agreement">Agreement</option>
+      <option value="Alternatives">Alternatives</option>
+      <option value="Summarise">Summarise</option>
+      <option value="Next Step">Next Step</option>
+      <option value="Anticipate">Anticipate</option>
+      <option value="Specifies">Specifies</option>
+      <option value="Justify">Justify</option>
+      <option value="Uncertain">Uncertain</option>
+      <option value="Compare">Compare</option>
+      <option value="Anxieties">Anxieties</option>
+      <option value="Defend">Defend</option>
+      <option value="Attention Elsewhere">Attention Elsewhere</option>
+    </select>
+  </div>
+
+  <div style="margin-top: 15px">
+    <div class="inputbox">
+      <input
+        type="text"
+        placeholder="Enter Question"
+        style="padding: 10px; width: 90%"
+        formControlName="question"
+      />
+    </div>
+    <br />
+    <div class="inputbox">
+      <input
+        type="text"
+        placeholder="Option 1"
+        style="padding: 10px; width: 70%"
+        formControlName="option1"
+      />
+      <input
+        type="text"
+        placeholder="Enter Option 1 Marks"
+        style="padding: 10px; width: 20%; margin-left: 5px"
+        formControlName="mark1"
+      />
+    </div>
+    <br />
+    <div class="inputbox">
+      <input
+        type="text"
+        placeholder="Option 2"
+        style="padding: 10px; width: 70%"
+        formControlName="option2"
+      />
+      <input
+        type="text"
+        placeholder="Enter Option 2 Marks"
+        style="padding: 10px; width: 20%; margin-left: 5px"
+        formControlName="mark2"
+      />
+    </div>
+    <br />
+    <div class="inputbox">
+      <input
+        type="text"
+        placeholder="Option 3"
+        style="padding: 10px; width: 70%"
+        formControlName="option3"
+      />
+      <input
+        type="text"
+        placeholder="Enter Option 3 Marks"
+        style="padding: 10px; width: 20%; margin-left: 5px"
+        formControlName="mark3"
+      />
+    </div>
+    <br />
+    <div class="inputbox">
+      <input
+        type="text"
+        placeholder="Option 4"
+        style="padding: 10px; width: 70%"
+        formControlName="option4"
+      />
+      <input
+        type="text"
+        placeholder="Enter Option 4 Marks"
+        style="padding: 10px; width: 20%; margin-left: 5px"
+        formControlName="mark4"
+      />
+    </div>
+    <br />
+    <div class="inputbox">
+      <input
+        type="text"
+        placeholder="Option 5"
+        style="padding: 10px; width: 70%"
+        formControlName="option5"
+      />
+      <input
+        type="text"
+        placeholder="Enter Option 5 Marks"
+        style="padding: 10px; width: 20%; margin-left: 5px"
+        formControlName="mark5"
+      />
+    </div>
+  </div>
+  <button type="submit" class="btn-style" (click)="submitform()">Submit</button>
+  <button type="submit" class="btn-style" (click)="clearform()">Clear</button>
+</form>

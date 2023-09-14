@@ -1,0 +1,31 @@
+*{
+    margin: 0;
+    padding: 0;
+  }
+  .col-lg-1{
+   width: 5% !important;
+  }
+  .col-xl-11{
+  width: 95% !important;
+  }
+  .background-color{
+    background-color: #1e1836;
+    height: 300px;
+  } 
+  .Open-nav{
+    margin-top: 20px;
+    text-align: center;
+    padding: 10px;
+    background-color: #f8f9fa;
+  }
+ 
+  .btn-style{
+    border: none;
+    background-color: #f8f9fa;
+    padding: 5px;
+    border-radius: 10px;
+    width: 180px;
+  }
+ .btn-style:hover{
+    background-color: red;
+ }

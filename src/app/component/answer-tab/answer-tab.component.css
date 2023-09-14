@@ -1,0 +1,28 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+.col-xl-11 {
+  width: 100% !important;
+}
+.tableHead {
+  background-color: antiquewhite;
+}
+.backBtn {
+  margin: 5px;
+  margin-left: 10px;
+  background-color: red;
+  border: none;
+  border-radius: 5px;
+  width: 80px;
+  padding: 5px;
+}
+.exportBtn {
+  margin: 5px;
+  padding: 5px;
+  background-color: red;
+  border: none;
+  border-radius: 5px;
+  width: 150px;
+  margin-left: 80%;
+}

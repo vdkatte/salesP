@@ -1,0 +1,17 @@
+.body {
+  background-color: rgb(133, 123, 112);
+}
+.formStyle {
+  width: 80%;
+  margin-left: 10%;
+  padding: 10px;
+}
+.btn-style {
+  background-color: rgb(218, 137, 45);
+  padding: 10px;
+  width: 30%;
+  border: none;
+  border-radius: 10px;
+  margin-top: 10px;
+  margin-left: 25%;
+}

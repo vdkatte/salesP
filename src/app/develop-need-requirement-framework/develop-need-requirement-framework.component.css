@@ -1,0 +1,72 @@
+*{
+    margin: 0;
+    padding: 0;
+  }
+  .col-lg-1{
+   width: 5% !important;
+  }
+  .col-xl-11{
+  width: 95% !important;
+  }
+  .background-color{
+    background-color: #1e1836;
+    height: 300px;
+  } 
+  .Open-nav{
+    margin-top: 20px;
+    text-align: center;
+    padding: 10px;
+    background-color: #f8f9fa;
+  }
+  .btn-style{
+    border: none;
+    background-color: #f8f9fa;
+    padding: 3px;
+    border-radius: 10px;
+    width: 180px;
+  }
+ .btn-style:hover{
+    background-color: red;
+ }
+ .develop-need-tab{
+    margin-top: 10px;
+    margin-left: 20px;
+ }
+ .develop-need-tab-button{
+    background-color: #f8f9fa;
+    border: none;
+ }
+ .data{
+  margin-left: 50px;
+  overflow-y: scroll;
+  height: 60vh;
+ }
+.question{
+    margin-top: 10px;
+    display: flex;
+    gap: 20px;
+}
+.answer{
+    display: flex;
+    flex-direction: column;
+    margin-left: 40px;
+}
+.label-style{
+    margin-left: 10px;
+}
+.other{
+ margin-left: 50px;
+ 
+}
+.btn{
+    margin:20px;
+    display: flex;
+    justify-content: center;
+}
+.btn-design1{
+    margin-left: 15px;
+    width: 80px;
+    border-radius: 5px;
+    border: none;
+    background-color: red;
+}

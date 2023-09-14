@@ -1,0 +1,42 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+.col-lg-1 {
+  width: 5% !important;
+}
+.col-xl-11 {
+  width: 95% !important;
+}
+.background-color {
+  background-color: #1e1836;
+  height: 300px;
+}
+.Open-nav {
+  margin-top: 20px;
+  text-align: center;
+  padding: 10px;
+  background-color: #f8f9fa;
+}
+.questionArea {
+  margin-top: 20px;
+  margin-left: 15px;
+}
+.data {
+  width: 100%;
+
+  margin-right: 20px;
+  overflow-y: scroll;
+  height: 75vh;
+}
+.btn-design1 {
+  display: flex;
+  margin-left: 45%;
+  width: 80px;
+  border-radius: 5px;
+  border: none;
+  background-color: red;
+  margin-top: 20px;
+  margin-bottom: 20px;
+  justify-content: center;
+}

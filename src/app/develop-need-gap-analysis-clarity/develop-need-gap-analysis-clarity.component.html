@@ -1,0 +1,61 @@
+<div class="contariner-fluid ">
+    <div class="row">
+        <div class="col-lg-1">
+            <app-side-bar></app-side-bar>
+        </div>
+        <div class="col-xl-11" style="margin-top: 5px;">
+            <app-header></app-header>
+           <div class="container-fluid Open-nav ">
+            <div class="row">
+                <div class="col">
+                    <button class="btn-style ">Requirement</button>
+                </div>
+                <div class="col">
+                    <button class="btn-style " style="background-color: red; color: white;">Gap Analysis</button>
+                </div>
+                <div class="col">
+                    <button class="btn-style ">Significance</button>
+                </div>
+            </div>
+           </div>
+           <div class="develop-need-tab">
+            <button class="btn-style">Ideal v Current</button>
+            <button class="btn-style" style="margin-left: 10px; background-color: red; color: white;" >Clarity</button>
+           </div>
+        <br>
+        <div class="container data">
+            <div *ngFor="let que of data1;let i=index">
+            <div class="question">
+                <div><b>Q.{{i+1}}</b></div>
+                <div><b>{{que.Que1}}</b></div>
+            </div>
+            <div class="question">
+                <div class="answer" >
+                    <div *ngFor="let data of que.Option1;let i=index">
+                        <input type="checkbox" (click)="onclick($event,que.Que1,data)" [value]="que.marks1[i]">
+                        <label class="label-style">{{data | json }}</label>
+                    </div>
+                    <div>
+                        <input type="checkbox" #checkbox (click)="onchange($event,i)" value="1">
+                        <label class="label-style">"other"</label>
+                    </div>
+                </div>
+                <div>
+                    <div class="other" *ngIf="que.other">
+                        <textarea name="" id="" cols="30" rows="3"></textarea>
+                    </div>
+                </div>
+            </div>
+            <hr>
+        </div>
+        </div>
+        <div class="btn">
+            <button class="btn-design1" (click)="saveData($event)">Save</button>
+            <button class="btn-design1">Reset</button>
+            <button class="btn-design1" *ngIf="this.check==true" (click)="previous()">Previous</button>
+            <button class="btn-design1" *ngIf="this.check==true" (click)="next()">Next</button>
+        </div>
+        </div>
+        <hr>
+    </div>
+</div>

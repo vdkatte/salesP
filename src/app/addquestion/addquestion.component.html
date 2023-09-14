@@ -1,0 +1,45 @@
+<div class="container">
+    <div class="row">
+        <div class="col-md-3">
+
+        </div>
+        <div class="col-md-6 main">
+            <form action="/sign_up" method="POST">
+                <h2>Add New Question Here</h2>
+                <hr>
+                <input type="text" class="box" id="qname" name="qname" placeholder="Question Description" required />
+                <br>
+                <input type="text" class="box" id="Ansr_Options1" name="Ansr_Options1" placeholder="Ansr_Options1"
+                    required />
+                <br>
+                <input type="text" class="box" id="Ansr_Options2" name="Ansr_Options2" placeholder="Ansr_Options2" />
+                <br>
+                <input type="text" class="box" id="Ansr_Options3" name="Ansr_Options3" placeholder="Ansr_Options3" />
+                <input type="text" class="box" id="Ansr_Options4" name="Ansr_Options4" placeholder="Ansr_Options4" />
+                <br>
+                <select class="form-select form-select-sm" aria-label=".form-select-sm example">
+                    <option selected>Select the Stages or Traps </option>
+                    <option value="1">Stage-1</option>
+                    <option value="2">Trap-1</option>
+                    <option value="3">Stage-2</option>
+                    <option value="3">Stage-3</option>
+                    <option value="3">Trap-2</option>
+                    <option value="3">Stage-4</option>
+                </select>
+                <select class="form-select form-select-sm" aria-label=".form-select-sm example">
+                    <option selected>Select The Question Type</option>
+                    <option value="1">MCQ</option>
+                    <option value="1">True/False</option>
+                    <option value="1">Yes/No</option>
+                </select>
+                <br>
+
+                <input routerLink="/successfull" type="submit" value="Submit" id="submit" />
+
+            </form>
+
+        </div>
+        <div class="col-md-3">
+        </div>
+    </div>
+</div>
